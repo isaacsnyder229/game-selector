@@ -24,8 +24,24 @@
     h1 {
       text-align: center;
       color: #d7a3ff;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-size: 2.4rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .subtitle a {
+      color: #caa9ff;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .subtitle a:hover {
+      color: #e8caff;
+      text-decoration: underline;
     }
 
     .game-grid {
@@ -71,7 +87,8 @@
 <body>
   <div class="container">
     <h1>Isaac's Game Selector</h1>
-
+    <p class="subtitle"><a href="https://sites.google.com/view/staticquasar931/">For a better catalogue of games go here</a></p>
+    
     <div class="game-grid">
       <!-- CARD 1 -->
       <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Reincarnated-as-a-Dark-Lord-Before-Taking-Over-the-World-with-Power-999999999/')">
@@ -86,14 +103,20 @@
         <div class="title">Shredmill</div>
         <div class="desc">In the year 30XX, your only shot at glory is on four wheels. Welcome to Shredmill, a televised bloodsport where fame-hungry technopunks skate across an endless, crumbling loop. With every lap, more of the track collapses behind you, turning the loop ahead into a perilous deathtrap.</div>
       </div>
-
+      
       <!-- CARD 3 -->
       <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life/')">
         <img src="https://files.catbox.moe/ir4a8z.webp" alt="Duck Life Game Logo"/>
         <div class="title">Duck Life</div>
         <div class="desc">Duck Life is a fun training and racing game where you train a duck to compete in races. Upgrade its skills, compete, and become the champion of the race tracks.</div>
       </div>
-
+      
+      <!-- CARD 4 -->
+      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/waterworks/')">
+        <img src="https://files.catbox.moe/622wt6.png" alt="Waterworks Game Logo"/>
+        <div class="title">Waterworks!</div>
+        <div class="desc">Waterworks! is a card-based strategy game. You've been placed in charge of the water supply in the medieval town of Grudziądz. You'll have to use your management skills to make sure every house has enough water and at the same time gather supplies for development of new technologies!</div>
+      </div>
     </div>
   </div>
 

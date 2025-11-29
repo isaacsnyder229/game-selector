@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac's Game Selector</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #1a0f1f;
+      color: #e3d0ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d7a3ff;
+      margin-bottom: 20px;
+      font-size: 2.4rem;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .game-card {
+      background: #2a1833;
+      border-radius: 16px;
+      padding: 15px;
+      box-shadow: 0 0 15px rgba(140, 66, 255, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(177, 102, 255, 0.5);
+    }
+
+    .game-card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #e8caff;
+      text-shadow: 0 0 4px #a66dff;
+    }
+
+    .desc {
+      font-size: 0.9rem;
+      color: #caa9ff;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Isaac's Game Selector</h1>
+
+    <div class="game-grid">
+      <!-- CARD 1 -->
+      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Reincarnated-as-a-Dark-Lord-Before-Taking-Over-the-World-with-Power-999999999/')">
+        <img src="https://files.catbox.moe/f3y2de.png" alt="Reincarnated as a Dark Lord Before Taking Over the World with Power 999999999 Game Logo"/>
+        <div class="title">Reincarnated as a Dark Lord Before Taking Over the World with Power 999999999</div>
+        <div class="desc">An idle game with multiple endings and auto saves after finishing each run.</div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Shredmill/')">
+        <img src="https://files.catbox.moe/6gt3ls.png" alt="Shredmill Game Logo"/>
+        <div class="title">Shredmill</div>
+        <div class="desc">In the year 30XX, your only shot at glory is on four wheels. Welcome to Shredmill, a televised bloodsport where fame-hungry technopunks skate across an endless, crumbling loop. With every lap, more of the track collapses behind you, turning the loop ahead into a perilous deathtrap.</div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life/')">
+        <img src="https://files.catbox.moe/ir4a8z.webp" alt="Duck Life Game Logo"/>
+        <div class="title">Duck Life</div>
+        <div class="desc">Duck Life is a fun training and racing game where you train a duck to compete in races. Upgrade its skills, compete, and become the champion of the race tracks.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function openGame(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

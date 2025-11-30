@@ -3,8 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Isaac's Game Selector</title>
+  
+  <!-- SEO Meta Tags -->
+  <title>Isaac's Game Selector - Play Free Online Games Collection</title>
+  <meta name="description" content="Discover Isaac's collection of free online games including Reincarnated as a Dark Lord, Shredmill, Duck Life, and Waterworks! Play directly in your browser.">
+  <meta name="keywords" content="free online games, browser games, Isaac's games, Reincarnated as a Dark Lord, Shredmill, Duck Life, Waterworks, idle games, strategy games, racing games">
+  <meta name="author" content="Isaac S.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Isaac's Game Selector - Free Online Games Collection">
+  <meta property="og:description" content="Play free online games directly in your browser. Collection includes Reincarnated as a Dark Lord, Shredmill, Duck Life, and Waterworks!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://isaacsnyder229.github.io/">
+  <meta property="og:image" content="https://files.catbox.moe/f3y2de.png">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Isaac's Game Selector - Free Online Games">
+  <meta name="twitter:description" content="Collection of free browser games including Reincarnated as a Dark Lord, Shredmill, Duck Life, and Waterworks!">
+  <meta name="twitter:image" content="https://files.catbox.moe/f3y2de.png">
+  
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://isaacsnyder229.github.io/">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Isaac's Game Selector",
+    "description": "A collection of free online games playable directly in your browser",
+    "url": "https://isaacsnyder229.github.io/",
+    "author": {
+      "@type": "Person",
+      "name": "Isaac S."
+    },
+    "hasPart": [
+      {
+        "@type": "VideoGame",
+        "name": "Reincarnated as a Dark Lord Before Taking Over the World with Power 999999999",
+        "description": "An idle game with multiple endings and auto saves after finishing each run",
+        "gamePlatform": "Web browser",
+        "applicationCategory": "Game",
+        "url": "https://isaacsnyder229.github.io/Reincarnated-as-a-Dark-Lord-Before-Taking-Over-the-World-with-Power-999999999/"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Shredmill",
+        "description": "In the year 30XX, your only shot at glory is on four wheels. Welcome to Shredmill, a televised bloodsport where fame-hungry technopunks skate across an endless, crumbling loop",
+        "gamePlatform": "Web browser",
+        "applicationCategory": "Game",
+        "url": "https://isaacsnyder229.github.io/Shredmill/"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Duck Life",
+        "description": "Duck Life is a fun training and racing game where you train a duck to compete in races. Upgrade its skills, compete, and become the champion of the race tracks",
+        "gamePlatform": "Web browser",
+        "applicationCategory": "Game",
+        "url": "https://isaacsnyder229.github.io/duck-life/"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Waterworks!",
+        "description": "Waterworks! is a card-based strategy game. You've been placed in charge of the water supply in the medieval town of Grudziądz",
+        "gamePlatform": "Web browser",
+        "applicationCategory": "Game",
+        "url": "https://isaacsnyder229.github.io/waterworks/"
+      }
+    ]
+  }
+  </script>
+  
   <style>
     body {
       margin: 0;
@@ -88,7 +162,7 @@
 <body>
   <div class="container">
     <h1>Isaac's Game Selector</h1>
-    <p class="subtitle"><a href="https://sites.google.com/view/staticquasar931/">For a better catalogue of games go here</a></p>
+    <p class="subtitle"><a href="https://sites.google.com/view/staticquasar931/" aria-label="Visit our extended game catalogue">For a better catalogue of games go here</a></p>
     
     <div class="game-grid">
       <!-- CARD 1 -->
@@ -125,6 +199,17 @@
     function openGame(url) {
       window.location.href = url;
     }
+    
+    // Track outbound links for analytics (optional)
+    document.addEventListener('DOMContentLoaded', function() {
+      const gameCards = document.querySelectorAll('.game-card');
+      gameCards.forEach(card => {
+        card.addEventListener('click', function() {
+          // You can add analytics tracking here
+          console.log('Game clicked:', this.querySelector('.title').textContent);
+        });
+      });
+    });
   </script>
 </body>
 </html>

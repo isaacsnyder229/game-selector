@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<base target="_blank">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZQE7ZLRGN"></script>
 <script>
@@ -100,8 +101,32 @@
         "gamePlatform": "Web browser",
         "applicationCategory": "Game",
         "url": "https://isaacsnyder229.github.io/duck-life-3/"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Duck Life 4 (Flash)",
+        "description": "Train your team of ducks to reach the top of the duck racing championship in this long-awaited sequel",
+        "gamePlatform": "Web browser",
+        "applicationCategory": "Game",
+        "url": "https://isaacsnyder229.github.io/duck-life-4/"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Duck Life 5: TREASURE HUNT (Flash)",
+        "description": "After the Fire Duck was defeated, the volcano's eruption revealed an ancient cave. Treasure is inside! Are you ready to take on the challenge and explore the cave?",
+        "gamePlatform": "Web browser",
+        "applicationCategory": "Game",
+        "url": "https://isaacsnyder229.github.io/duck-life-5/"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Duck Life 6: SPACE",
+        "description": "Prepare to go galactic in the biggest Duck Life adventure ever! Train up in running, flying, swimming, climbing, jumping and (for the first time ever) intelligence so you can race your way across the universe to get back your crown",
+        "gamePlatform": "Web browser",
+        "applicationCategory": "Game",
+        "url": "https://isaacsnyder229.github.io/duck-life-6/"
       }
-    ]
+    ] 
   }
   </script>
   
@@ -228,9 +253,30 @@
 
       <!-- CARD 6 -->
       <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-3/')">
-        <img src="https://files.catbox.moe/ly7w15.png" alt="Duck Life 2: EVOLUTION Game Logo"/>
+        <img src="https://files.catbox.moe/ly7w15.png" alt="Duck Life 3: EVOLUTION Game Logo"/>
         <div class="title">Duck Life 3: EVOLUTION</div>
         <div class="desc">Train up your duck and enter it in races! This time, Ducklife meets Pokemon as the ducks can evolve to become naturally better at certain skills.</div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-4/')">
+        <img src="https://files.catbox.moe/03timi.png" alt="Duck Life 4 Game Logo"/>
+        <div class="title">Duck Life 4 (Flash)</div>
+        <div class="desc">Train your team of ducks to reach the top of the duck racing championship in this long-awaited sequel</div>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-5/')">
+        <img src="https://files.catbox.moe/emnw0i.png" alt="Duck Life 5: TREASURE HUNT Game Logo"/>
+        <div class="title">Duck Life 5: TREASURE HUNT (Flash)</div>
+        <div class="desc">After the Fire Duck was defeated, the volcano's eruption revealed an ancient cave. Treasure is inside! Are you ready to take on the challenge and explore the cave?</div>
+      </div>
+
+      <!-- CARD 9 -->
+      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-6/')">
+        <img src="https://files.catbox.moe/krer1k.png" alt="Duck Life 6: SPACE Game Logo"/>
+        <div class="title">Duck Life 6: SPACE</div>
+        <div class="desc">Prepare to go galactic in the biggest Duck Life adventure ever! Train up in running, flying, swimming, climbing, jumping and (for the first time ever) intelligence so you can race your way across the universe to get back your crown</div>
       </div>
     </div>
   </div>
@@ -244,7 +290,7 @@
   });
   
   // Redirect to game
-  window.location.href = url;
+  window.open(url, '_blank');
 }
   </script>
 </body>

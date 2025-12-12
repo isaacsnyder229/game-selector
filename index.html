@@ -232,6 +232,26 @@
       color: #caa9ff;
       opacity: 0.8;
     }
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      color: #f1d6ff;
+      margin: 12px 0 16px;
+      text-shadow: 0 0 6px #8f5cff;
+    }
+    .subsection {
+      margin-bottom: 20px;
+    }
+
+    .subsection-title {
+      font-size: 1.1rem;
+      color: #e9cfff;
+      margin: 8px 0;
+      text-shadow: 0 0 4px #7a4bd6;
+    }
   </style>
 </head>
 <body>
@@ -239,98 +259,143 @@
     <h1>Isaac's Game Selector</h1>
     <p class="subtitle"><a href="https://sites.google.com/view/staticquasar931/" aria-label="Visit our extended game catalogue">For a better catalogue of games go here</a></p>
     
-    <div class="game-grid">
-      <!-- CARD 1 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Reincarnated-as-a-Dark-Lord-Before-Taking-Over-the-World-with-Power-999999999/')">
-        <img src="https://files.catbox.moe/f3y2de.png" alt="Reincarnated as a Dark Lord Before Taking Over the World with Power 999999999 Game Logo"/>
-        <div class="title">Reincarnated as a Dark Lord Before Taking Over the World with Power 999999999</div>
-        <div class="desc">An idle game with multiple endings and auto saves after finishing each run.</div>
+    <section class="section">
+      <h2 class="section-title">Featured</h2>
+      <div class="game-grid">
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Reincarnated-as-a-Dark-Lord-Before-Taking-Over-the-World-with-Power-999999999/')">
+          <img src="https://files.catbox.moe/f3y2de.png" alt="Reincarnated as a Dark Lord Before Taking Over the World with Power 999999999 Game Logo"/>
+          <div class="title">Reincarnated as a Dark Lord Before Taking Over the World with Power 999999999</div>
+          <div class="desc">An idle game with multiple endings and auto saves after finishing each run.</div>
+        </div>
+
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Shredmill/')">
+          <img src="https://files.catbox.moe/6gt3ls.png" alt="Shredmill Game Logo"/>
+          <div class="title">Shredmill</div>
+          <div class="desc">In the year 30XX, your only shot at glory is on four wheels. Welcome to Shredmill, a televised bloodsport where fame-hungry technopunks skate across an endless, crumbling loop.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Duck Series</h2>
+      <div class="game-grid">
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life/')">
+          <img src="https://files.catbox.moe/ir4a8z.webp" alt="Duck Life Game Logo"/>
+          <div class="title">Duck Life 1</div>
+          <div class="desc">Train your duck and compete in races.</div>
+        </div>
+
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-2/')">
+          <img src="https://files.catbox.moe/c24tq8.png" alt="Duck Life 2: WORLD CHAMPIONSHIP Game Logo"/>
+          <div class="title">Duck Life 2: WORLD CHAMPIONSHIP</div>
+          <div class="desc">Train up a duckling then enter it in races to become the world champion.</div>
+        </div>
+
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-3/')">
+          <img src="https://files.catbox.moe/ly7w15.png" alt="Duck Life 3: EVOLUTION Game Logo"/>
+          <div class="title">Duck Life 3: EVOLUTION</div>
+          <div class="desc">Ducks can evolve to become better at certain skills.</div>
+        </div>
+
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-4/')">
+          <img src="https://files.catbox.moe/03timi.png" alt="Duck Life 4 Game Logo"/>
+          <div class="title">Duck Life 4 (Flash)</div>
+          <div class="desc">Train your team of ducks to reach the top of the championship.</div>
+        </div>
+
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-5/')">
+          <img src="https://files.catbox.moe/emnw0i.png" alt="Duck Life 5: TREASURE HUNT Game Logo"/>
+          <div class="title">Duck Life 5: TREASURE HUNT (Flash)</div>
+          <div class="desc">Explore caves and hunt for treasure after defeating the Fire Duck.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Flash / Arcade</h2>
+      <div class="game-grid">
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/learn-to-fly-3/')">
+          <img src="https://files.catbox.moe/kr4see.jpg" alt="Learn to Fly 3 Game Logo"/>
+          <div class="title">Learn to Fly 3 (Flash)</div>
+          <div class="desc">Guide a penguin to fly and upgrade equipment to go farther.</div>
+        </div>
+
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Age-of-War/')">
+          <img src="https://files.catbox.moe/6qhg12.jpg" alt="Age of War Game Logo"/>
+          <div class="title">Age of War (Flash)</div>
+          <div class="desc">Evolve through ages and command units and turrets to defeat your enemy.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Strategy / Simulation</h2>
+      <div class="game-grid">
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/waterworks/')">
+          <img src="https://files.catbox.moe/622wt6.png" alt="Waterworks Game Logo"/>
+          <div class="title">Waterworks!</div>
+          <div class="desc">Manage a medieval town's water supply and develop new technologies.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Retro</h2>
+      <div class="game-grid">
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/chrome-dino/')">
+          <img src="https://raw.githubusercontent.com/isaacsnyder229/assets/refs/heads/main/chrome%20dino%20icon-256.png" alt="Chrome Dino Game Logo"/>
+          <div class="title">Chrome Dino</div>
+          <div class="desc"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Super Nintendo Games</h2>
+
+      <div class="subsection">
+        <h3 class="subsection-title">Mario Games</h3>
+        <div class="game-grid">
+          <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Super-Mario-World/')">
+            <img src="https://raw.githubusercontent.com/isaacsnyder229/assets/refs/heads/main/super-mario-world.jpg" alt="Super Mario World Game Logo"/>
+            <div class="title">Super Mario World</div>
+            <div class="desc"></div>
+          </div>
+          <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Super-Mario-World-2/')">
+            <img src="https://raw.githubusercontent.com/isaacsnyder229/assets/refs/heads/main/super-mario-world-two.jpg" alt="Super Mario World 2 Game Logo"/>
+            <div class="title">Super Mario World 2</div>
+            <div class="desc"></div>
+          </div>
+          <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Super-Mario-Kart/')">
+            <img src="https://raw.githubusercontent.com/isaacsnyder229/assets/refs/heads/main/super-mario-kart.jpg" alt="Super Mario Kart 2 Game Logo"/>
+            <div class="title">Super Mario Kart</div>
+            <div class="desc"></div>
+          </div>
+        </div>
       </div>
 
-      <!-- CARD 2 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Shredmill/')">
-        <img src="https://files.catbox.moe/6gt3ls.png" alt="Shredmill Game Logo"/>
-        <div class="title">Shredmill</div>
-        <div class="desc">In the year 30XX, your only shot at glory is on four wheels. Welcome to Shredmill, a televised bloodsport where fame-hungry technopunks skate across an endless, crumbling loop. With every lap, more of the track collapses behind you, turning the loop ahead into a perilous deathtrap.</div>
+      <div class="subsection">
+        <h3 class="subsection-title">Other Games</h3>
+        <div class="game-grid">
+          <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/A-Link-to-the-Past/')">
+            <img src="https://raw.githubusercontent.com/isaacsnyder229/assets/refs/heads/main/legend-of-zelda-link-to-the-past.jpg" alt="A Link to the Past Game Logo"/>
+            <div class="title">A Link to the Past</div>
+            <div class="desc"></div>
+          </div>
+        </div>
       </div>
-      
-      <!-- CARD 3 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life/')">
-        <img src="https://files.catbox.moe/ir4a8z.webp" alt="Duck Life Game Logo"/>
-        <div class="title">Duck Life 1</div>
-        <div class="desc">Duck Life is a fun training and racing game where you train a duck to compete in races. Upgrade its skills, compete, and become the champion of the race tracks.</div>
-      </div>
-      
-      <!-- CARD 4 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/waterworks/')">
-        <img src="https://files.catbox.moe/622wt6.png" alt="Waterworks Game Logo"/>
-        <div class="title">Waterworks!</div>
-        <div class="desc">Waterworks! is a card-based strategy game. You've been placed in charge of the water supply in the medieval town of Grudziądz. You'll have to use your management skills to make sure every house has enough water and at the same time gather supplies for development of new technologies!</div>
-      </div>
+    </section>
 
-      <!-- CARD 5 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-2/')">
-        <img src="https://files.catbox.moe/c24tq8.png" alt="Duck Life 2: WORLD CHAMPIONSHIP Game Logo"/>
-        <div class="title">Duck Life 2: WORLD CHAMPIONSHIP</div>
-        <div class="desc">Train up a duckling then enter it in races to become the world champion of duck racing! (yes duck racing exists)</div>
+    <section class="section">
+      <h2 class="section-title">Misc</h2>
+      <div class="game-grid">
+        <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/We-Become-what-we-Behold/')">
+          <img src="https://raw.githubusercontent.com/isaacsnyder229/assets/refs/heads/main/We%20Become%20what%20we%20Behold%20thumb.png" alt="We Become what we Behold Game Logo"/>
+          <div class="title">We Become what we Behold</div>
+          <div class="desc"></div>
+        </div>
       </div>
-
-      <!-- CARD 6 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-3/')">
-        <img src="https://files.catbox.moe/ly7w15.png" alt="Duck Life 3: EVOLUTION Game Logo"/>
-        <div class="title">Duck Life 3: EVOLUTION</div>
-        <div class="desc">Train up your duck and enter it in races! This time, Ducklife meets Pokemon as the ducks can evolve to become naturally better at certain skills.</div>
-      </div>
-
-      <!-- CARD 7 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-4/')">
-        <img src="https://files.catbox.moe/03timi.png" alt="Duck Life 4 Game Logo"/>
-        <div class="title">Duck Life 4 (Flash)</div>
-        <div class="desc">Train your team of ducks to reach the top of the duck racing championship in this long-awaited sequel</div>
-      </div>
-
-      <!-- CARD 8 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/duck-life-5/')">
-        <img src="https://files.catbox.moe/emnw0i.png" alt="Duck Life 5: TREASURE HUNT Game Logo"/>
-        <div class="title">Duck Life 5: TREASURE HUNT (Flash)</div>
-        <div class="desc">After the Fire Duck was defeated, the volcano's eruption revealed an ancient cave. Treasure is inside! Are you ready to take on the challenge and explore the cave?</div>
-      </div>
-
-      <!-- CARD 9 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/learn-to-fly-3/')">
-        <img src="https://files.catbox.moe/kr4see.jpg" alt="Learn to Fly 3 Game Logo"/>
-        <div class="title">Learn to Fly 3 (Flash)</div>
-        <div class="desc">Learn to Fly 3 is an online game where you guide a penguin as it tries to fly. You can play Story, Challenge, or Arcade Mode, each offering different goals. Using simple controls—usually arrow keys and the spacebar—you try to reach greater distances, heights, or speeds. As you earn in-game currency, you can buy upgrades like better equipment and special gadgets to improve your flight. The game’s missions and achievements push you to refine your strategy, adjust your flight angles, and time your boosts. For more detailed help, check official guides or community tips.</div>
-      </div>
-
-      <!-- CARD 10 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Age-of-War/')">
-        <img src="https://files.catbox.moe/6qhg12.jpg" alt="Age of War Game Logo"/>
-        <div class="title">Age of War (Flash)</div>
-        <div class="desc">Take control of 16 different units and 15 different turrets to defend your base and destroy your enemy. In this game, you start at the cavern men's age, then evolve! There is a total of 5 ages, each with its units and turrets. I hope you have fun with this game!</div>
-      </div>
-
-      <!-- CARD 11 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/chrome-dino/')">
-        <img src="https://raw.githubusercontent.com/isaacsnyder229/assets/refs/heads/main/chrome%20dino%20icon-256.png" alt="Chrome Dino Game Logo"/>
-        <div class="title">Chrome Dino</div>
-        <div class="desc"></div>
-      </div>
-
-      <!-- CARD 12 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/We-Become-what-we-Behold/')">
-        <img src="https://raw.githubusercontent.com/isaacsnyder229/assets/refs/heads/main/We%20Become%20what%20we%20Behold%20thumb.png" alt="We Become what we Behold Game Logo"/>
-        <div class="title">We Become what we Behold</div>
-        <div class="desc"></div>
-      </div>
-
-      <!-- CARD 13 -->
-      <div class="game-card" onclick="openGame('https://isaacsnyder229.github.io/Super-Mario-World/')">
-        <img src="https://raw.githubusercontent.com/isaacsnyder229/assets/refs/heads/main/super-mario-world.jpg" alt="Super Mario World Game Logo"/>
-        <div class="title">Super Mario World</div>
-        <div class="desc"></div>
-      </div>
-    </div>
+    </section>
   </div>
 
   <script>
